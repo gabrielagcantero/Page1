@@ -1,0 +1,58 @@
+h1{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+h2{
+    font-family: 'Dancing Script', cursive;
+    color: purple;
+    padding: 0px 5px;
+}
+body p{
+    color: purple;
+}
+header{
+    background-color: lightpink;
+    color: purple;
+    padding: 10px 5px;
+}
+.nav{
+    background-color: violet;
+    color: wheat;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px outset #aa77e0;
+}
+img{
+    margin: 50px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    height: 300px;
+}
+#silueta{
+    border: 0px;
+    height: 40px;
+    margin: 0px;
+}
+.foto{
+    margin: 0px 0px 10px 0px;
+}
+form{
+    background-color: #edb4e0;
+    width: 350px;
+    padding: 10px;
+}
+input, select{
+    border-radius: 5px;
+    border: 1px solid purple;
+}
+th, td{
+    border: 1px solid purple;
+    padding: 5px;
+}
+footer{
+    background-color: lightpink;
+    color: purple;
+    text-align: center;
+    padding: 10px;
+}
