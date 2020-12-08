@@ -1,0 +1,146 @@
+* {
+	margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+body{
+    background-image: url("https://tinyurl.com/y5zreh52");
+    opacity: 0.8;
+}
+.container-fluid{
+    width: 90%;
+    margin: 30px auto 10px;
+    padding: 10px;
+    
+}
+header, footer, a, .submit{
+    background-color: rgb(250, 202, 230);
+    color: purple;
+}
+footer{
+    text-align: center;
+}
+.navbar {
+    padding: 3px 10px;
+}
+.nav-link, .dropdown-item{
+    color: purple;
+}
+main, .show{
+    background-color: rgba(252, 248, 235, 0.8);
+    color: purple;
+}
+.bio{
+    display: flex;
+}
+.bio-link{
+    margin:auto 20px;
+    
+}
+.bio-item, .submit{
+    padding: 10px;
+    border: 5px solid rgb(252, 248, 235);
+}
+p{
+    width: 100%;
+    color: purple;
+    padding: 20px;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+a, li{
+    font-family: 'Gentium Book Basic', serif;
+}
+a:hover, .dropdown-item:hover, .submit:hover{
+    color: fuchsia;
+    text-decoration: none;
+}
+.submit{
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+.place{
+    background-color: transparent;
+    border: 5px solid rgb(252, 248, 235);
+}
+h1, h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin: 10px auto;
+    color: purple;
+}
+h2{
+    text-align: left;
+}
+.ubic, img{
+    margin: 10px 20px;
+    border: 1px solid purple;
+    border-radius: 10px;
+    height: 300px;
+    opacity: 100%;
+}
+#siluet{
+    border: 0px;
+    height: 40px;
+    margin: 0px;
+    padding-bottom:  10px;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+ul {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: opx;
+    margin-inline-start: opx;
+    margin-inline-end: 0px;
+    padding-inline-start: 10px;
+    list-style-type: circle;
+}
+.navbar ul{
+    list-style-type: none;
+}
+.obras{
+    padding: 0px 40px;
+}
+@keyframes animation{
+    from{
+        -webkit-transform:rotate(0deg);
+        transform:rotateY(0deg);
+    }
+    50%{
+        -webkit-transform:rotate(180deg);
+        transform:rotateY(180deg);
+    }
+    to{
+        -webkit-transform:rotate(0deg);
+        transform:rotateY(0deg);
+    }
+}
+form{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+input, select{
+    border-radius: 5px;
+    border: 1px solid purple;
+}
+th, td{
+    border: 1px solid purple;
+    padding: 5px;
+    font-family: 'Goudy Bookletter 1911', serif;
+    background-color: rgbA(250, 202, 230, 0.5);
+    color: purple;
+}
+.navbar-expand-sm {
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+.d-block{
+    margin: 20px auto 40px;
+}
+.carousel-indicators li{
+    background-color: rgb(250, 202, 230);
+    opacity: 1;
+}
+.carousel-indicators .active{
+    background-color: fuchsia;
+}

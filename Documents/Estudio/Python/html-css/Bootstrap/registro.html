@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jane Austen</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gentium+Book+Basic:wght@600&family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/6e37c34a55.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/main.css">
+    </head>
+    <body>
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-sm">
+                <!-- Dropdown -->
+                <ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Secciones</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="index.html">Home</a>
+                            <a class="dropdown-item" href="other.html">Inspiraciones</a>
+                            <a class="dropdown-item" href="ubicacion.html">Ubicaciones</a>
+                            <a class="dropdown-item" href="registro.html">Registro</a>
+                            <a class="dropdown-item" href="clientes.html">Lectores</a>
+                        </div>
+                    </li>
+                </ul>
+                <img src="imagenes/silueta.png" alt="silueta de Jane" id="siluet">
+            </nav>
+            <h1>Jane Austen</h1>
+        </header>
+
+        <main class="container-fluid">
+            <div class="container-fluid">
+                <h2>Registro</h2>
+                <br>
+                <form action="show_data.html">
+                    <label for="nombre">Nombre:</label> <input type="text" name="nombre" placeholder=" Escriba su nombre"> <br>
+                    <label for="apellido">Apellido:</label> <input type="text" name="apellido" placeholder=" Escriba su apellido"> <br>
+                    <label for="domicilio">Domicilio:</label> <input type="text" name="domicilio" placeholder=" calle, número"> <br>
+                    <label for="ciudad">Ciudad:</label> <input type="text" name="ciudad" value=" C.A.B.A."> <br>
+                    <label for="prov">Provincia:</label> 
+                    <select name="prov">
+                        <option value="baires" selected>Buenos Aires</option>
+                        <option value="jujuy">Jujuy</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="cata">Catamarca</option>
+                    </select><br>
+                    <label for="genero">Género:</label>
+                        <input type="radio" name="genero" value="Femenino"><label for="femenino">Femenino</label>
+                        <input type="radio" name="genero" value="masculino" ><label for="masculino">Masculino</label>
+                    <br>
+                    <label for="dia">Nacimiento:</label> <input type="date" name="dia" placeholder="dd/mm/yyyy"> <br><br>
+                    <label for="estudios"> Quiero saber sobre:</label><br>
+                        <label><input type="checkbox" name="esto"> Esto</label>
+                        <label><input type="checkbox" name="aquello"> Aquello</label>
+                        <label><input type="checkbox" name="otro"> Lo otro</label><br>
+                        <input type="submit" value="Enviar" class="submit">
+                </form>
+            </div>
+        </main>
+
+        <footer class="container-fluid">
+            <p><a href="http://www.instagram.com/eldesordendevivir" target="_blank"><i class="fab fa-instagram-square"></i></a>
+            <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            Todos los derechos reservados</p>
+        </footer>
+    </body>    
+</html>

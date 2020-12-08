@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Jane Austen</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Gentium+Book+Basic:wght@600&family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="https://kit.fontawesome.com/6e37c34a55.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="CSS/main.css">
+  </head>
+  <body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-sm">
+            <!-- Dropdown -->
+            <ul>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Secciones</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="index.html">Home</a>
+                        <a class="dropdown-item" href="other.html">Inspiraciones</a>
+                        <a class="dropdown-item" href="ubicacion.html">Ubicaciones</a>
+                        <a class="dropdown-item" href="registro.html">Registro</a>
+                        <a class="dropdown-item" href="clientes.html">Lectores</a>
+                    </div>
+                </li>
+            </ul>
+            <img src="imagenes/silueta.png" alt="silueta de Jane" id="siluet">
+        </nav>
+        <h1>Jane Austen</h1>
+    </header>
+
+    <main class="container-fluid">
+      <div class= "container-fluid">
+        <h2>Se ha enviado la siguente información:</h2>
+        <br>
+        <table>
+          <tr>
+            <th>Campo</th>
+            <th>Valor</th>
+          </tr>
+          <script language="javascript">
+            var args = location.search.substr(1).split('&');
+            for (var i = 0; i < args.length; ++i) {
+              var parts = args[i].split('=');
+              if (parts != null) {
+                var field = parts[0];
+                var value = parts[1];
+                if (value == null) {
+                   value = "null"
+                }
+              else {
+                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+              }
+              document.writeln('<tr><td>' + field + '</td>');
+              document.writeln('<td>' + value + '</td></tr>');
+              }
+            }
+          </script>
+          <noscript>
+            <tr><td>
+              <p>You need to turn on Javascript in your browser.</p>
+              <p>In Microsoft Internet Explorer 4 or greater:</p>
+              <ul>
+                <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+                <li>Click on the "Security" tab.</li>
+                <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+                and then click on "Settings...".)</li>
+                <li>Under "Active scripting" make sure "Enable" is selected.</li>
+              </ul>
+              <p>In Netscape version 4 or greater:</p>
+              <ul>
+                <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+                <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+                <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+                <li>Click the <b>OK</b> button.</li>
+              </ul>
+            </td> </tr>
+          </noscript>
+        </table>
+      </div>
+    </main>
+
+    <footer class="container-fluid">
+      <p><a href="http://www.instagram.com/eldesordendevivir" target="_blank"><i class="fab fa-instagram-square"></i></a>
+      <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
